@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+body {
+  background-color: #8353e4;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+
+  .input{
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid rgb(250, 237, 237);
+    background-color: #b08dfb;;
+    width: 400px;
+
+    button{
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 1px;
+      padding: 10px;
+    }
+
+    #input-el{
+      padding: 10px;
+      width: 300px;
+      border-radius: 10px;
+    }
+  }
+
+  h1{
+    color: rgb(252, 232, 232);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+
+  .todo-list{
+    margin-top: 50px;
+    background-color: #b08dfb;
+    border: 2px solid rgb(255, 255, 255);
+    width: 440px;
+    ul {
+      color: rgb(255, 254, 254);
+      font-size: 18px;
+      list-style-type:none;
+      
+  }
+  }
+
+  input[type='checkbox'] {
+    width:40px;
+    height: 18px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+  }
+
+  input[type='checkbox']:checked {
+    background: rgb(208, 224, 255);
+}
+
+
+// input[type='text'] {
+//   border-radius: 10px;
+// }
+#add-button{
+
+  background: linear-gradient(to bottom right, #a46afc, #7514f3);
+  border: 0;
+  margin-left: 3.5px;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  transition: box-shadow .2s ease-in-out;
+}
+
+#add-button:hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(185, 98, 255, 0.5), .125rem .125rem 1rem rgba(175, 118, 255, 0.5);
+}
+}
+
+.fa-solid {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 10px;
+  color: white;
+  transition: color 0.3s; 
+}
+
+.fa-solid:hover {
+  color: #7514f3;
+}
+
+@media(max-width: 460px){
+
+  #add-button{
+    margin-top: 20px;
+  }
+  .container {
+    margin-top: 30px;
+  }
+
+  .container .input {
+    width: 80%;
+  }
+
+  .container .input #input-el {
+    width: 80%;
+  }
+
+  .container .todo-list {
+    width: 90%;
+  }
+}
